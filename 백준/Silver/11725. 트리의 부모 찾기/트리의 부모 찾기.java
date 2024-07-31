@@ -44,7 +44,7 @@ public class Main {
         for (Node j = g[i]; j != null; j = j.link) {
             if (!visited[j.vertex]) {
                 parents[j.vertex] = i;
-                // System.out.println(i+"의 부모는 "+j.vertex);
+                //System.out.println((j.vertex+1)+"의 부모는 "+(i+1));
                 dfs(j.vertex);
             }
         }
