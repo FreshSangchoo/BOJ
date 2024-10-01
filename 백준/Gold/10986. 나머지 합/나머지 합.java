@@ -28,11 +28,7 @@ public class Main {
 
         // 3. S[j] % M == S[i-1] % M 을 만족하는 (i,j)의 수를 결과값에 더한다.
         // 즉, cnt[i](i가 나머지인 인덱스의 수)에서 2가지를 뽑는 경우의 수 카운팅한다.
-        for(int i=0; i<M; i++) {
-            if(cnt[i] > 1) {
-                result += (cnt[i]* (cnt[i]-1) / 2);
-            }
-        }
+        for(int i=0; i<M; i++) result += (cnt[i]* (cnt[i]-1) / 2);
         System.out.println(result);
 
 
