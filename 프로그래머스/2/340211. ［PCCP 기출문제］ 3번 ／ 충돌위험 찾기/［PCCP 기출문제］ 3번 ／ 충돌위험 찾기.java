@@ -62,7 +62,7 @@ class Solution {
                     
                     t++;
                     
-                    if(++factory[currentR][currentC][t] ==2) answer++;
+                    if(++factory[currentR][currentC][t] == 2) answer++;
                 }
             }
         }
