@@ -28,14 +28,12 @@ void dfs(const string &current_word) {
             else {
                 diff_count++;
                 index_next++;
-                if (diff_count > 1) break;
+                if (diff_count > 1) break; // 두 글자 이상 다르면 종료
             }
         }
 
         // diff_count = 0인 경우: current_word의 글자 맨 뒤에 한 글자가 추가된 경우
-        if (diff_count <= 1) {
-            dfs(next);
-        }
+        if (diff_count <= 1) dfs(next);
     }
 }
 int main()
